@@ -185,9 +185,10 @@ body {
     display: flex;
     align-items: center;
     margin-top: 5rem;
-    background-image: url('png7.jpg');
+    background-image: url('bg1.jpeg');
     background-size: cover;
-    background-position: center;
+    background-position-x: 70%;
+    background-position-y: 10%;
     background-repeat: no-repeat;
     position: relative;
     mask-image: linear-gradient(rgba(0,0,0,1) 90%, rgba(0,0,0,0));
@@ -197,7 +198,7 @@ body {
 .hero .mask-container {
     position: absolute;
     inset: 0;
-    mask-image: url('qq.png');
+    mask-image: url('bg2.png');
     mask-size: cover;
     mask-position: center;
     mask-repeat: no-repeat;
@@ -208,7 +209,7 @@ body {
     text-align: center;
     position: fixed;
     top: 50px;
-    padding: 7rem 7%;
+    padding: 2rem 7%;
     /* max-width: 60rem; */
 }
 
@@ -303,6 +304,7 @@ margin-top: 1rem;
     display: flex;
     flex-wrap: wrap;
     margin-top: 5rem;
+    align-items: center;
     justify-content: center;
 }
 

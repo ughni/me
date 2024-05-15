@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+/* navbar start */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem 0;
+    font-family: viga;    
+    background: black;
+}
+  
+.navbar .nav-logo h2 {
+  color: white;
+}
+
+.navbar .nav-logo span {
+    color: brown;
+}
+
+.navbar .nav-link a {
+    margin: 0 1rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .nav-menu a {
+    color: #fff;
+    display: none;
+}
+/* navbar end */
+
+
+h1 {
+    text-align: center;
+    margin: 4rem;
+}
+
+
+/* media query  */
+
+  

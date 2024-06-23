@@ -4,47 +4,263 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mughni</title>
-    <link rel="stylesheet" href="port.css">
-
-    <!-- font google viga -->
+    <title>M MUGHNI</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="fafikon.png " type="image/x-icon">
+    <!-- boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+    <!-- incons boostrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="port.css">
 </head>
 
 <body>
-    <!-- navbar start -->
-    <nav>
-        <div class="nav-judul">
-            <h1>M <span>MUGHNI</span></h1>
+    <header>
+        <div class="container">
+            <h1>M MUGHNI <span class="dot">•</span></h1>
+            <nav class="nav-link">
+                <a href="#Home">Home</a>
+                <a href="#about">About</a>
+                <a href="#Skills">Skills</a>
+                <a href="#Project">Project</a>
+                <a href="index.html">Kembali</a>
+            </nav>
+            <div class="nav-menu">
+                <a href="" id="tombol_menu"><i data-feather="menu"></i></a>
+            </div>
         </div>
+    </header>
+    <main>
+        <section class="hero container" id="Home">
+            <div class="row align-items-center">
+                <div class="hero-content col-md-6 mx-auto">
+                    <h2 class="mt-5 animated-text">Web Developer</h2>
+                    <h1 class="animated-text">M Mughni <span class="dot">•</span></h1>
+                    <p>Perkenalkan, nama saya M Mughni. Saya adalah seorang web developer. Saya memiliki passion untuk
+                        menciptakan website yang fungsional, menarik, dan mudah digunakan. Saya selalu mengikuti
+                        perkembangan teknologi terbaru di bidang web development agar dapat memberikan solusi terbaik
+                        bagi
+                        klien saya.</p>
+                    <a class="icon-link icon-link-hover link-success  bg-warning p-3 rounded-3 link-underline-success link-underline-opacity-25"
+                        href="#">
+                        Let's talk
+                        <i data-feather="arrow-right"></i>
+                    </a>
+                </div>
+                <div class="hero-image col-md-6 mb-5">
+                    <img src="lo.png" class="rounded bg-transparent animate-image" alt="..." style="width: 90%;">
+                </div>
+            </div>
+        </section>
+    </main>
 
-        <div class="nav-link">
-            <a href="#home">Home</a>
-            <a href="#">Project</a>
-            <a href="#">Contact</a>
-            <a href="index.html">Return</a>
-        </div>
-        <div class="nav-logo">
-            <a href="" id="tombol-menu"><i data-feather="menu"></i>
-            </a>
-        </div>
-    </nav>
-    <!-- navbar end -->
-    <!-- hiro start -->
-    <section class="hiro">
+    <!-- about -->
+    <section class="about mt-5  mb-5" id="about">
+        <div class="container p-4">
+            <div class="row bg-transparent">
+                <div class="col-md-6 pe-5">
+                    <img src="web.png" class="rounded bg-transparent img-fluid" alt="...">
+                </div>
+                <div class="col-md-6 p-1">
+                    <h1>About Me</h1>
+                    <p>Saya adalah seorang Web Programmer yang bersemangat dan kreatif dengan pengalaman 1 tahun dalam
+                        merancang, mengembangkan, dan memelihara situs web yang dinamis dan menarik. Saya memiliki
+                        keahlian
+                        dalam berbagai bahasa pemrograman web, termasuk [sebutkan bahasa pemrograman] dan framework
+                        seperti
+                        laravel.</p>
 
+                    <p>Saya memiliki passion untuk menciptakan situs web yang tidak hanya indah secara visual, tetapi
+                        juga
+                        mudah digunakan dan fungsional. Saya selalu mengikuti tren terbaru dalam teknologi web dan
+                        selalu
+                        mencari cara baru untuk meningkatkan keterampilan saya.</p>
+                    <h4>Media Sosial</h4>
+                    <a href="https://www.instagram.com/" class="text-warning" target="_blank"><i
+                            data-feather="instagram"></i></a>
+                    <a href="https://www.youtube.com/@PramukaSmarka/videos" class="ms-2 text-warning"><i
+                            data-feather="youtube"></i></a>
+                </div>
+            </div>
+        </div>
     </section>
-    <!-- hiro end -->
 
-    <!-- data -->
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script>
-      feather.replace();
-    </script>
-    <script src="port.js"></script>
+    <!-- sekil -->
+
+    <section class="sekil mt-5" id="Skills">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <h1>Tools & Skills</h1>
+                    <p>Alat pengembangan web adalah program yang membantu para programmer membuat dan memelihara situs
+                        web dan aplikasi web. Alat ini dapat dikategorikan ke dalam berbagai jenis, masing-masing dengan
+                        tujuan dan fungsinya sendiri. Berikut adalah beberapa kategori alat pengembangan web yang umum
+                    </p>
+                </div>
+                <div class="col-12 col-md-6 text-center d-flex flex-wrap justify-content-center">
+                    <div class="tools p-3">
+                        <img src="https://img.icons8.com/?size=48&id=EzPCiQUqWWEa&format=png" class="rounded"
+                            width="50px" alt="">
+                        <p>Bootstrap</p>
+                    </div>
+                    <div class="tools p-3">
+                        <img src="https://img.icons8.com/?size=80&id=111453&format=png" class="rounded" width="50px"
+                            alt="">
+                        <p>Data Feather</p>
+                    </div>
+                    <div class="tools p-3">
+                        <img src="https://static.canva.com/web/images/12487a1e0770d29351bd4ce4f87ec8fe.svg" width="70px"
+                            class="rounded" alt="">
+                        <p class="mt-4">Canva</p>
+                    </div>
+                    <div class="tools p-3">
+                        <img src="https://img.icons8.com/?size=48&id=20909&format=png" class="rounded" alt=""
+                            width="50px">
+                        <p>HTML</p>
+                    </div>
+                    <div class="tools p-3">
+                        <img src="https://img.icons8.com/?size=48&id=21278&format=png" class="rounded" width="50px"
+                            alt="">
+                        <p>CSS</p>
+                    </div>
+                    <div class="tools p-3">
+                        <img src="https://img.icons8.com/?size=48&id=108784&format=png" class="rounded" alt=""
+                            width="50px">
+                        <p>Javascript</p>
+                    </div>
+                    <div class="tools p-3">
+                        <img src="https://img.icons8.com/?size=30&id=anECpXcEIboQ&format=png" class="rounded" alt=""
+                            width="50px">
+                        <p>PHP</p>
+                    </div>
+                    <div class="tools p-3">
+                        <img src="https://img.icons8.com/?size=50&id=3767&format=png" class="rounded" alt=""
+                            width="50px">
+                        <p>SQL</p>
+                    </div>
+                    <div class="tools p-3">
+                        <img src="https://img.icons8.com/?size=48&id=lRjcvhvtR81o&format=png" class="rounded" alt=""
+                            width="50px">
+                        <p>Laravel</p>
+                    </div>
+                    <div class="tools p-3">
+                        <img src="https://img.icons8.com/?size=50&id=12598&format=png" class="rounded" alt=""
+                            width="50px">
+                        <p>Github</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- project -->
+    <section>
+        <section class="project py-5" id="Project">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card border-0 shadow-lg">
+                            <div class="row "
+                                style="background: linear-gradient(135deg, #1e1e2f, #2a2a3b); box-shadow: 0px 0px 20px #fff;">
+                                <div class="col-md-6 d-flex align-items-center">
+                                    <div class="card-body text-light">
+                                        <h5 class="card-title text-warning">Project Overview</h5>
+                                        <h3 class="card-title">website loading</h3>
+                                        <p class="card-text">Aplikasi Pemantauan dirancang untuk melacak aktivitas
+                                            sehari-hari dalam organisasi dengan mengumpulkan, mengintegrasikan, dan
+                                            memproses data.</p>
+                                        <a href="#" class="cta">View Project</a>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <img src="hp.png" class="img-fluid rounded-end" alt="Monitoring Project Image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--  -->
+
+        <section class="fom mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <form class="mt-5 pt-5">
+                            <h3>Message For Us</h3>
+                            <div class="mb-3">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="floatingInput" placeholder="Nama">
+                                    <label for="floatingInput">Nama</label>
+                                </div>
+                            </div>
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="floatingPassword"
+                                    placeholder="Password">
+                                <label for="floatingPassword">Password</label>
+                            </div>
+                            <button type="submit" class="btn btn-warning mt-3">Submit</button>
+                        </form>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center align-items-center">
+                        <img src="undraw_Mobile_interface_re_1vv9.png" alt="" class="img-fluid opacity-75"
+                            style="max-width: 100%;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ahir-->
+        <footer class="mt-5">
+            <!-- // Start of the Selection -->
+            <div class="container text-light text-center">
+                <div class="row">
+                    <div class="col">
+                        <h1>M MUGHNI <span class="dot">•</span></h1>
+                        <p>Terima kasih telah kunjungannya portofolio ini kepada saya. Saya senang dengan hasilnya dan
+                            berharap
+                            Anda juga demikian. Jangan ragu untuk menghubungi saya jika Anda memiliki pertanyaan.</p>
+                        <hr>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container d-flex justify-content-center align-items-center" style="height: 100%;">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p class="text-light">&copy; 2024 M Mughni <span class="dot">•</span>. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="port.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/feather-icons"></script>
+        <script>
+            feather.replace();
+        </script>
 </body>
 
 </html>
+
+
+<!-- https://dribbble.com/shots/18029299-Portofolio-Website/attachments/13215430?mode=media -->

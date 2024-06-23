@@ -1,110 +1,207 @@
-* {
-  padding: 0;
-  margin: 0;
+:root {
+  --background-image: linear-gradient(90deg, #1e1e2f 0%, #22227e 100%);
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* nav start */
-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-family: viga;
-  padding: 1rem;
-  position: fixed;
-  width: 100%;
-}
-
-nav .nav-judul h1 {
-  font-size: 2rem;
+  font-family: 'Viga', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: var(--background-image);
+  /* background: linear-gradient(135deg, #1e1e2f, #555589); */
   color: #fff;
-}
-nav .nav-judul span {
-  color: brown;
+  background-size: 200%;
+  animation: animate-bg 5s infinite alternate;
 }
 
-nav .nav-link a{
+/* animasi body */
+@keyframes animate-bg {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+header {
+  width: 100%;
+  position: fixed;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+header  h1  {
+  cursor: pointer;
+  font-size: 24px;
+}
+
+header .dot, footer .dot,main .dot  {
+  color: #ffcc00;
+}
+
+header {
+  z-index: 99999;
+}
+
+nav a {
+  margin: 0 15px;
   text-decoration: none;
-  color: rgb(255, 250, 250);
+  color: #fff;
   display: inline-block;
-  margin: 0 1rem;  
 }
 
-nav .nav-link a::after {
+nav a:hover {
+  color: #ffcc00;
+}
+
+nav a::after {
   content: '';
   display: block;
   padding-bottom: .5rem;
-  border-bottom: .2rem solid #fff;
+  border-bottom: .2rem solid #ffcc00;
   transform: scaleX(0);
   transition: 0.2s linear;
 }
 
-nav .nav-link a:hover::after {
+nav a:hover::after {
   transform: scaleX(.5);
 }
-
-nav .nav-logo {
-  display: none;
+ 
+.nav-menu {
+    display: none;
 }
-nav .nav-logo a{
- color: #fff;
-}
-/* nav end */
 
 
 
-
-
-
-
-
-
-
-.hiro {
+.hero {
+  display: flex;
   height: 100vh;
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrmdNJ0yCk-EeP8LxZsT_ph3k15AwW8F1y1g&s');
-  background-size: cover;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem 50px 50px 50px;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.cta {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ffcc00;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.hero .hero-image {
+  text-align: center;
+}
+
+.hero-image img {
+  border-radius: 10px;
+}
+
+.animated-text {
+  animation: textAnimation 2s ease-in-out infinite alternate;
+}
+
+@keyframes textAnimation {
+  0% {
+    transform: translateY(0);
+    color: #fff;
+    text-shadow: none;
+  }
+  50% {
+    transform: translateY(-10px);
+    color: #ffcc00;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
+  }
+  100% {
+    transform: translateY(0);
+    color: #fff;
+    text-shadow: none;
+  }
 }
 
 
-/* media query */
-@media  screen and (max-width:526px) {	
-  na .nav-judul h1 {
-    font-size:1rem;
-  }
-  nav .nav-link a {
-    margin: 0 0.5rem;
-  }
+section {
+  z-index: -2;
+  height: 100vh;
+  padding-top: 10rem;
 }
 
-@media  screen and (max-width:500px ) {	
-  nav .nav-link {
+.sekil img {
+  cursor: pointer;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+footer {
+  padding-top: 5rem;
+}
+
+@media screen and (max-width:752px) {
+  .hiro h2 {
+     padding: 20rem 0 0 0 ;
+  }
+}	
+
+
+@media  screen and (max-width:544px ) {	
+  header .container nav {
     position: absolute;
     top: 100%;
     right: -100%;
-    width: 20rem;
-    background: rgb(57, 54, 54);
-    height: 50vh;
-    transition: 0.5s;
-    border-bottom-left-radius: 20px;
+    width: 50%;
+    background: #31314b;
+    height: 100vh;
+    transition: 300ms;
   }
-  nav .nav-link.active {
+  header .container nav.active {
     right: 0;
   }
-  nav .nav-link a {
+  header .container nav a{
     display: block;
-    margin: 1.5rem;
+    line-height: 4rem;
   }
-  nav .nav-link a::after {
-    transform-origin: 0 0;
-  }
-  nav .nav-link a:hover:after {
-    transform:scaleX(0.2);
-  } 
-  nav .nav-logo  {
+  .nav-menu {
     display: block;
   }
+/* 
+  .hero {
+    display: flex;
+    flex-wrap: wrap;
+  } */
+
+  /* .hero .hero-image {
+    width: 100%;
+  }
+  .hero .hero-image img {
+    width: 100%;
+  } */
 }
+

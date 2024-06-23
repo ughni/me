@@ -1,14 +1,16 @@
-// panggil nav bar
-const navbarLink = document.querySelector('.nav-link');
-const tombolMenu =  document.querySelector('#tombol-menu')
-tombolMenu.addEventListener('click', function (e) {
-  navbarLink.classList.toggle('active');
-  e.preventDefault();
-});
+// awal yang di jalangkan
+// alert('Selamat datang di web portofolio kami');
 
-// kalo click bukan menu
+const navLink = document.querySelector('.nav-link');
+const btnMenu = document.querySelector('#tombol_menu')
+document.querySelector('#tombol_menu').onclick = (e) => {
+  navLink.classList.toggle('active');
+  e.preventDefault();
+}
+
 document.addEventListener('click', function (e) {
-  if (!tombolMenu.contains(e.target) && !navbarLink.contains(e.target)) {
-      navbarLink.classList.remove('active')
-    }
-});
+  if (!btnMenu.contains(e.target) && !navLink.contains(e.target)) {
+    navLink.classList.remove('active')
+  }
+})
+

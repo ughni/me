@@ -2,65 +2,334 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BLOSSOM</title>
-    <link rel="shortcut icon" href="b.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="mughni.css">
-    <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BLOSSOM</title>
+  <link rel="shortcut icon" href="b.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="mughni.css">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
 
-    <!-- icons  -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- icons  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body class="bg-black">
 
-    <nav class="navbar navbar-expand-lg z-3 fixed-top">
-        <div class="container">
-            <a class="navbar-brand text-light href=" #"> <img src="b.png" alt="Bootstrap" width="30" height="24">
-                BLOSSOM</a>
-            <button class="navbar-toggler text-bg-danger" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link anim text-light active" aria-current="page" href="#">EXPLORE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link anim text-light" href="#">ROOMS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link anim text-light" href="#">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link anim text-light" href="#">ACTIVITES</a>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <a href="" class="btn border text-light fra" type="button" aria-disabled="true">BOOK NEW <i class="bi bi-arrow-right"></i></a>
-                </form>
-            </div>
+  <nav class="navbar bg-transparent fixed-top">
+    <div class="container">
+      <a class="navbar-brand text-light" href="#">
+        <img src="b.png"  alt="Bootstrap" width="30" height="24">BLOSSOM
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-    </nav>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active " aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Link
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Home</a></li>
+                <li><a class="dropdown-item" href="index.html">Organisani</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="port.html">Portovolio</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <div>
+        <p>CDA Avenue, Chittagong</p>
+        <h1>We Are Open For Reservation</h1>
+        <div class="booking-form">
+            <form>
+                <div class="form-row d-flex flex-wrap">
+                    <div class="form-group col-md-2 p-2">
+                        <label for="checkin">Check In</label>
+                        <input type="date" class="form-control" id="checkin" value="2023-08-28">
+                    </div>
+                    <div class="form-group col-md-2 p-2">
+                        <label for="checkout">Check Out</label>
+                        <input type="date" class="form-control" id="checkout" value="2023-08-30">
+                    </div>
+                    <div class="form-group col-md-2 p-2">
+                        <label for="persons">Persons</label>
+                        <input type="text" class="form-control" id="persons" value="2 Adults & 2 Children">
+                    </div>
+                    <div class="form-group col-md-2 p-2">
+                        <label for="roomtype">Room/Suite Type</label>
+                        <input type="text" class="form-control" id="roomtype" value="Luxury King Suite">
+                    </div>
+                    <div class="form-group col-md-2 p-2">
+                        <label for="rates">Selected Rates</label>
+                        <input type="text" class="form-control" id="rates" value="Lowest Available Rate">
+                    </div>
+                    <div class="form-group col-md-2 p-2 align-self-end">
+                        <button type="submit" class="btn btn-primary btn-block">Check Availability</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 
 
-    <section class="hero text-center text-light" style="padding-top: 7rem;">
-        <h1 style="font-size: 4rem;">Five Star Hole</h1>
+  <section class="cdr">
+    <div class="container my-5">
+      <div class="row g-4">
+        <div class="col-md-3">
+          <div class="card bg-success text-white feature-card">
+            <div class="card-body p-5">
+              <h5 class="card-title">DESTINATION. LUXURY. RESPITE.</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card bg-info text-black feature-card">
+            <div class="card-body">
+              <h2><i class="bi bi-heart-fill"></i></h2>
+              <h5 class="card-title">IT'S YOUR OWN, PLAN BIG SHOW</h5>
+              <p class="card-text">We love to orchestrating your wedding events</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 ">
+          <div class="card bg-warning text-white feature-card">
+            <div class="card-body">
+              <h2><i class="bi bi-fire"></i></h2>
+              <h5 class="card-title">TRY OUR EXHILARATING SPA & GYM</h5>
+              <p class="card-text">Experience world's greatest relaxation on earth!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card bg-dark text-dark feature-card">
+            <div class="card-body">
+              <h5 class="card-title text-light">2K23 FALL TRAVEL GUIDE</h5>
+              <p class="card-text text-light">The autumn foliage in full display, it's the perfect time to hit the road.
+              </p>
+              <a href="#" class="btn btn-dark">View Online Guide</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="service">
+    <div class="container custom-h">
+      <div class="row">
+        <div class="col-md-4 d-flex flex-wrap">
+          <h4 class="mb-4 text-black">We let ourselves be inspired by the history as well as by contemporary artist of the city.
+          </h4>
+          <div class="d-flex justify-content-center justify-content-lg-start">
+            <a class="btn text-black" href="#" role="button">Link <i class="bi bi-arrow-right"></i></a>
+            <a href="#" class="btn text-black">BREAKFAST <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-md-4 text-center">
+          <img
+            src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGhvdGVsJTIwa2FtYXJ8ZW58MHx8MHx8fDA%3D"
+            class="img-fluid" alt="Beach House">
+        </div>
+        <div class="col-md-4 ">
+          <h3 class="font-weight-bold">SERVICE OFFERS WE PROVIDE</h3>
+          <span>Blossom provides an aesthetic beach house to our International Tourist and Event organizer.</span>
+          <a href="#" class="btn btn-outline-dark">SEE ALL SERVICES</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ss -->
+  <section>
+    <div class="container-fluid bg-dark text-white p-4">
+      <div class="row">
+        <div class="col-lg-4 text-center mb-4 mb-lg-0" >
+          <div class="card bg-dark border-0 text-white">
+            <div class="card-body">
+              <h5 class="card-title">Book Your Unmatched Adventure</h5>
+              <p class="card-text">Participate in black golf events.</p>
+              <a href="#" class="btn btn-warning">BOOK NOW</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 text-center mb-4 mb-lg-0">
+          <div class="card bg-dark border-0 text-white">
+            <div class="card-body">
+              <h5 class="card-title">Participate in Black Golf Events</h5>
+              <p class="card-text">In 2022 we feature the region's golf event.</p>
+              <a href="#" class="btn btn-outline-light">LEARN MORE</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 text-center">
+          <div class="card bg-dark border-0 text-white">
+            <div class="card-body">
+              <h5 class="card-title">Blossom Cottages in Hill Country</h5>
+              <p class="card-text">Our cottages are situated along the scenic hill trail in the peaceful country setting
+                of grand cheer on beautiful hill island.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ss -->
+
+  <div class="container mt-5">
+    <section>
+      <!-- Section 1 -->
+      <div class="row mb-5">
+        <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <h3>Blossom Cottages in Hill Country</h3>
+          <p>Our cottages are located in stunning settings and offer unparalleled views of the surrounding hills.</p>
+          <a href="#" class="btn btn-outline-dark">BOOK NOW</a>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aG90ZWx8ZW58MHx8MHx8fDA%3D" class="img-fluid" alt="Blossom Cottages">
+        </div>
+      </div>
+
     </section>
 
+    <section>
+      <!-- Section 2 -->
+      <div class="row mb-5">
+        <div class="col-lg-6 text-center">
+          <img src="https://plus.unsplash.com/premium_photo-1682089297123-85459da8036b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aG90ZWx8ZW58MHx8MHx8fDA%3D" class="img-fluid" alt="Villa or Resorts">
+        </div>
+        <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <h3>Stay Long, Save More on Villa or Resorts</h3>
+          <p>The longer you stay, the more you save on our stunning villas and resorts.</p>
+          <a href="#" class="btn btn-outline-dark">SEE MORE</a>
+        </div>
+      </div>
+    </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZL
-        ESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <section> <!-- Section 3 -->
+      <div class="row mb-5">
+        <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <h3>Experiences You Get with Blossom</h3>
+          <ul>
+            <li>Hiking</li>
+            <li>Mountain Climbing</li>
+            <li>Specialized Tours</li>
+          </ul>
+          <a href="#" class="btn btn-outline-dark">LEARN MORE</a>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGhvdGVsfGVufDB8fDB8fHww" class="img-fluid" alt="Experiences with Blossom">
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <!-- Section 4: The Blog -->
+      <div class="row mb-5">
+        <div class="col-12 text-center">
+          <h3>The Blog</h3>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fGhvdGVsfGVufDB8fDB8fHww" class="card-img-top" alt="Blog Image">
+            <div class="card-body">
+              <h5 class="card-title">Swans to Celebrate Your Big Day</h5>
+              <p class="card-text">21-03-2023</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img src="https://plus.unsplash.com/premium_photo-1678286769888-ef3698e72a6c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fGhvdGVsfGVufDB8fDB8fHww" class="card-img-top" alt="Blog Image">
+            <div class="card-body">
+              <h5 class="card-title">Tourists Provide Stay Long, Save More</h5>
+              <p class="card-text">21-03-2023</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fGhvdGVsfGVufDB8fDB8fHww" class="card-img-top" alt="Blog Image">
+            <div class="card-body">
+              <h5 class="card-title">Enjoy Serene Beauty by Kayaking on Lake</h5>
+              <p class="card-text">21-03-2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+<footer class="footer mt-auto py-3">
+  <div class="container text-center">
+      <div class="row">
+          <div class="col-md-4">
+              <h5>Company</h5>
+              <ul class="list-unstyled">
+                  <li><a href="mughni.html">Home</a></li>
+                  <li><a href="index.html">Oraginasi</a></li>
+                  <li><a href="port.html">Portofolio</a></li>
+              </ul>
+          </div>
+          <div class="col-md-4">
+              <h5>Follow Us</h5>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-whatsapp"></i></a>
+          </div>
+          <div class="col-md-4">
+              <h5>Subscribe</h5>
+              <form>
+                  <div class="form-group">
+                      <input type="email" class="form-control" placeholder="Enter email">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Subscribe</button>
+              </form>
+          </div>
+      </div>
+      <div class="row mt-3">
+          <div class="col-12">
+              <p>&copy; 2024 Your Company. M Mughni.</p>
+          </div>
+      </div>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
+    defer></script>
+
 </body>
 
 </html>
